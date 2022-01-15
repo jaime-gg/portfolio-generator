@@ -16,7 +16,7 @@ const generateProjects = projectsArr => {
   return `
     <section class="my-3" id="portfolio">
       <h2 class="text-dark bg-primary p-2 display-inline-block">Work</h2>
-      
+
       <div class="flex-row justify-space-between">
       ${projectsArr
         .filter(({ feature }) => feature)
@@ -57,8 +57,7 @@ const generateProjects = projectsArr => {
 };
 
 module.exports = templateData => {
-  console.log(templateData);
-
+  //console.log(templateData);
   // destructure projects and about data from templateData based on their property key names
   const { projects, about, ...header } = templateData;
 
